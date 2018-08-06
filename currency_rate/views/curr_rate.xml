@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ 
+<odoo>
+  <data>
+	
+
+	<record model="ir.ui.view" id="inherit_view_currency_rate_tree">
+            <field name="name">res.currency.rate.tree.inherit</field>
+            <field name="model">res.currency.rate</field>
+            <field name="inherit_id" ref="base.view_currency_rate_tree"/>
+	    	<field name="arch" type="xml">
+	    	
+		
+	   			<field name="name" position="after">
+					<field name="kurs_jual"/>
+					<field name="kurs_beli"/>
+					<!-- <field name="divider"/> -->
+					<!-- <field name="currency_id" invisible="True"/> -->
+				</field> 
+				
+		
+	    	</field>
+        </record>
+
+  </data>
+</odoo>
